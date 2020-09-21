@@ -5,7 +5,7 @@
 }
 
 .ex-1-square:hover{
-    background-color: red;;
+    background-color: red;
 }
 
 /* Esercizio 2 */
@@ -116,4 +116,56 @@
     100% {
         transform: rotate(0);
     }
+}
+
+/* Esercizio 12 */
+
+.ex-12-button:hover .ex-12-top-white{
+    animation: scrolltop 2s linear infinite;
+}
+
+@keyframes scrolltop {
+    0% {left: 10%;}
+    50%{left: calc(100% - 60px);}
+    100% {left: 10%;}
+}
+
+.ex-12-button:hover .ex-12-bottom-white{
+    animation: scrollbottom 2s linear infinite;
+}
+
+@keyframes scrollbottom {
+    0% {right: 20%;}
+    50%{right: calc(100% - 60px);}
+    100% {right: 20%;}
+}
+
+/* Esercizio 13 */
+
+.ex-13-button:hover .ex-13-top-white{
+    animation: scroll2top 4s linear infinite;
+}
+
+@keyframes scroll2top {
+    0% {left: 10%; top: -10px;}
+    30% {left: calc(100% - 30px); top: -10px;}
+    40% {left: calc(100% - 30px); top: calc(100% - 10px)}
+    50% {left: calc(90% - 60px); top: calc(100% - 10px)}
+    80% {left: -20px; top: calc(100% - 10px)}
+    90% {left: -20px; top: -10px;}
+    100% {left: 10%; top: -10px;}
+}
+
+.ex-13-button:hover .ex-13-bottom-white{
+    animation: scroll2bottom 4s linear infinite;
+}
+
+@keyframes scroll2bottom {
+    0% {right: 20%; bottom: -10px;}
+    30% {right: calc(100% - 40px); bottom: -10px;}
+    40% {right: calc(100% - 40px); bottom: calc(100% - 10px)}
+    50% {right: calc(90% - 60px); bottom: calc(100% - 10px)}
+    80% {right: -20px; bottom: calc(100% - 10px)}
+    90% {right: -20px; bottom: -10px;}
+    100% {right: 20%; bottom: -10px;}
 }
